@@ -10,3 +10,4 @@ git config --global alias.ll log --color --graph --pretty=format:'%Cred%h%Creset
 # bash
 alias git_current_branch="git symbolic-ref --short HEAD"
 alias front="factorial open frontend"
+alias e2e="npm run cypress:gitpod"
