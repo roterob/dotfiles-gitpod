@@ -8,3 +8,4 @@ git config --global alias.st status
 
 # bash
 alias git_current_branch="git symbolic-ref --short HEAD"
+alias front="factorial open frontend"
