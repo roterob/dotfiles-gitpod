@@ -28,5 +28,6 @@ history -s packwerk update-deprecations
 history -s git add '**/finance/*'
 history -s bundle exec rbprettier --write '**/finance/**/*.rb'
 history -s bundle exec tapioca dsl
+history -s bundle exec rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 1234 --skip_wait_for_start -- bin/rails s -p 3000 -b 0.0.0.0
 source "/home/gitpod/fzf-0.33.0/shell/key-bindings.bash"
 
