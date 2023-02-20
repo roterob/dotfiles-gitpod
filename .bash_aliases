@@ -17,6 +17,7 @@ alias undo="git reset HEAD~1 --soft"
 # history
 PATH=$PATH:~/fzf-0.33.0/bin/
 history -s pnpm graphql-codegen
+history -s pnpm cypress:gitpod
 history -s rails autodiscovery:generate_graphql_schema
 history -s rails finance:generate_graphql_schema
 history -s rails db:seeds:finance
