@@ -22,6 +22,7 @@ history -s rails autodiscovery:generate_graphql_schema
 history -s rails finance:generate_graphql_schema
 history -s rails db:seeds:finance
 history -s rails db:seeds:finance_e2e
+history -s rails db:seeds:reset_finance
 history -s rails finance:install:migrations
 history -s rails finance:sections:import_spain
 history -s rails finance:sections:set_section_type
