@@ -31,6 +31,8 @@ history -s git add '**/finance/*'
 history -s bundle exec rbprettier --write '**/finance/**/*.rb'
 history -s bundle exec tapioca dsl
 history -s bundle exec rubocop-changes
+history -s bundle exec rails data:migrate:status
+history -s bundle exec rails data:migrate:up VERSIONS=
 history -s bundle exec rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 1234 --skip_wait_for_start -- bin/rails s -p 3000 -b 0.0.0.0
 history -s semgrep --include "backend/*" --json --exclude-rule do_not_expand_components --exclude-rule do_not_expand_design_system
 history -s semgrep --include "frontend/*" --json --exclude-rule do_not_expand_components --exclude-rule do_not_expand_design_system
