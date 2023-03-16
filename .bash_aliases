@@ -39,6 +39,7 @@ history -s semgrep --include "backend/*" --json --exclude-rule do_not_expand_com
 history -s semgrep --include "frontend/*" --json --exclude-rule do_not_expand_components --exclude-rule do_not_expand_design_system
 history -s rake db:rollback STEP=1
 history -s rails g migration CreateFinanceJournalSequences --component=finance
+history -s rspec --pattern='components/finance/**/spec/**/*_spec.rb'
 export HISTCONTROL=ignoreboth:erasedups
 source "/home/gitpod/fzf-0.33.0/shell/key-bindings.bash"
 
