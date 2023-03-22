@@ -10,6 +10,8 @@ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(ye
 
 # bash
 alias git_current_branch="git symbolic-ref --short HEAD"
+alias urls="factorial urls"
+alias graph="factorila open graphiql"
 alias front="factorial open frontend"
 alias e2e="npm run cypress:gitpod"
 alias amend!="git commit --amend --no-edit"
