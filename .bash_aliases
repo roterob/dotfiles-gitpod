@@ -21,6 +21,7 @@ alias undo="git reset HEAD~1 --soft"
 PATH=$PATH:~/fzf-0.33.0/bin/
 history -s pnpm graphql-codegen
 history -s pnpm cypress:gitpod
+history -s pnpm exec tsc --noEmit
 history -s rails autodiscovery:generate_graphql_schema
 history -s rails finance:generate_graphql_schema
 history -s rails db:seeds:finance
@@ -42,7 +43,8 @@ history -s semgrep --include "backend/*" --json --exclude-rule do_not_expand_com
 history -s semgrep --include "frontend/*" --json --exclude-rule do_not_expand_components --exclude-rule do_not_expand_design_system
 history -s rake db:rollback STEP=1
 history -s rails g migration CreateFinanceJournalSequences --component=finance
-history -s rspec --pattern='components/finance/**/spec/**/*_spec.rb'
+history -s bundle exec rspec --pattern='components/finance/**/spec/**/*_spec.rb'
+history -s CYPRESS_BASE_URL="`gp url 8080`" CYPRESS_API_ENDPOINT="`gp url 5000`" npx cypress run --browser chrome --spec cypress/integration/finance/
 history -s make profile.check profiles=backend command="make wait.backend" > /dev/null
 history -s make profile.check profiles=frontend,frontend-preview command="make wait.frontend" /dev/null
 export HISTCONTROL=ignoreboth:erasedups
