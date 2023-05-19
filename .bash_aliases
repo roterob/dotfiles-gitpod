@@ -20,6 +20,7 @@ alias undo="git reset HEAD~1 --soft"
 
 # history
 PATH=$PATH:~/fzf-0.33.0/bin/
+history -s export TINYBIRD_TOKEN_FINANCE=
 history -s pnpm graphql-codegen
 history -s pnpm cypress:gitpod
 history -s pnpm exec tsc --noEmit
